@@ -18,7 +18,7 @@ let tasks = [];
             renderTasks();
         }
 
-        // Edit the task (toggle editing mode)
+        // Edit the task
         function editTask(index) {
             tasks[index].isEditing = !tasks[index].isEditing;
             renderTasks();
@@ -36,7 +36,7 @@ let tasks = [];
                 tasks[index].dateTime = taskDateTime;
             }
 
-            tasks[index].isEditing = false; // End editing mode
+            tasks[index].isEditing = false; 
             renderTasks();
         }
 
